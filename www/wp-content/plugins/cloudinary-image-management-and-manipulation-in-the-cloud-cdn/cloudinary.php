@@ -78,20 +78,20 @@ class CloudinaryPlugin
     $public_id = $info["filename"];
     $mime_types = array("png"=>"image/png", "jpg"=>"image/jpeg", "pdf"=>"application/pdf", "gif"=>"image/gif", "bmp"=>"image/bmp");
     $type = $mime_types[$info["extension"]];
-    #$api = new CloudinaryApi();
-    #$info = $api->resource($public_id, array("image_metadata"=>TRUE, "derived"=>FALSE));
-    #$meta = $this->extract_metadata($info["image_metadata"]);
-    $meta = NULL;
+    $api = new CloudinaryApi();
+    $info = $api->resource($public_id, array("image_metadata"=>TRUE, "derived"=>FALSE));
+    $meta = $this->extract_metadata($info["image_metadata"]);
+    #$meta = NULL;
     if ($original_attachment) {
       $md = wp_get_attachment_metadata($attachment_id);
       $meta = $md["image_meta"];      
       $title = $original_attachment->post_title;
       $caption = $original_attachment->post_content;      
-    } else {
-      $title = NULL;
-      $caption = NULL;
-      $meta = NULL;
-    }
+    } #else {
+      #$title = NULL;
+      #$caption = NULL;
+      #$meta = NULL;
+  #  }
     if (!$title) $title = $public_id;
     if (!$caption) $caption = '';
     if (!$meta) $meta = array(

@@ -1,11 +1,11 @@
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /gitwordpress/www/
+RewriteBase /twpics/www/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /gitwordpress/www/index.php [L]
+RewriteRule . /twpics/www/index.php [L]
 </IfModule>
 
 # END WordPress
