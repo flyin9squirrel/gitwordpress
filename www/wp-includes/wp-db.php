@@ -1345,7 +1345,6 @@ class wpdb {
 			}
 
 			if ( $this->dbh->connect_errno ) {
-				print_r($this);
 				$this->dbh = null;
 
 				/* It's possible ext/mysqli is misconfigured. Fall back to ext/mysql if:
