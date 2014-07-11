@@ -14,6 +14,14 @@ TW Photo Archive is based on 'classtheme20140625' http://github.com/rhildred
 
 @CHARSET "ISO-8859-1";
 
+@import "../plugins/gravityforms/css/reset.css"
+@import "../plugins/gravityforms/css/formreset.css"
+@import "../plugins/gravityforms/css/datepicker.css"
+@import "../plugins/gravityforms/css/formsmain.css"
+@import "../plugins/gravityforms/css/readyclass.css"
+@import "../plugins/gravityforms/css/browsers.css"
+
+
 body {
 	font-family: 'Alegreya Sans', san-serif;
 	font-weight: 500;
