@@ -1,3 +1,17 @@
+/*
+Theme Name: TW Photo Archive
+Theme URI: http://twpics-anorris.rhcloud.com
+Author: Andrew Norris
+Description: A custom theme for WordPress
+Version: 1
+Text Domain: twpics
+
+TW Photo Archive is based on 'classtheme20140625' http://github.com/rhildred 
+
+*/
+/* =Reset
+-------------------------------------------------------------- */
+
 @CHARSET "ISO-8859-1";
 
 body {
