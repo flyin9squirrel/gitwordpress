@@ -38,7 +38,7 @@
 				</nav>
 			</div>
 			<!-- #access -->
-			<h1><?php echo GitWordPressLayout::$Viewbag['sTitle'] ?></h1>
+			<h1 class="hidden-xs"><?php echo GitWordPressLayout::$Viewbag['sTitle'] ?></h1>
 		</div>
 <?php GitWordPressLayout::renderBody(); ?>
 <div id="delimiter"></div>
