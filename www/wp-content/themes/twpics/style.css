@@ -20,20 +20,20 @@ body {
 	font-weight: 500;
 }
 
-h1 {
+h1, h2 {
 	font-family: 'Alegreya SC', serif;
 	font-weight: 900;
 	color: #b94948;
 	padding-top: 0;
 }
 
-h2, h3 {
+h3, h4 {
 	font-family: 'Alegreya', serif;
 	font-weight: 700;
 	color: #b94948;
 }
 
-h4 {
+h5 {
 	font-family: 'Alegreya', serif;
 	font-weight: 700;
 	color: #999;

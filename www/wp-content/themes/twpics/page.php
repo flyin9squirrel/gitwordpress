@@ -8,8 +8,8 @@ GitWordPressLayout::layout ( "_layout.php" );
 <div id="main" class="row">
 	<div id="content" class="col-md-9">
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-<h1><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h1>
-		<h4>Posted on <?php the_time('F jS, Y') ?></h4>
+<h2><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
+		<h5>Posted on <?php the_time('F jS, Y') ?></h5>
 		<p><?php the_content(__('(more...)')); ?></p>
 		<?php comments_template(); ?>
 		<hr> <?php endwhile; else: ?>
